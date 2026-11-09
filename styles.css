@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Thin 100
-ExtraLight 200
-Light 300
-Regular 400
-Medium 500
-SemiBold 600
-Bold 700
-ExtraBold 800 */
-
 /* Full body file */
 *{
     margin: 0px;
@@ -38,8 +29,8 @@ nav ul button{
     border-radius: 5px;
     padding: 5px 10px;
     border: 1px solid black;
-    background-color: F5F5F5;
-    font-weight: semi-bold;
+    background-color: #F5F5F5;
+    font-weight: 600;
     font-size: 18px;
 }
 nav ul button:hover{
@@ -81,7 +72,7 @@ nav ul button:hover{
     background-color: #C6E4D6;
 }
 
-/* section-1 */
+/* section-1 Pillars of "Bangladesh 2.0" */
 .part-1 h3{
     font-weight: 700;
     font-size: 30px;
@@ -104,7 +95,7 @@ nav ul button:hover{
     padding: 0px;
 }
 
-/* Section-2 */
+/* Section-2 The Vision of Future */
 .part-2 h2{
     font-weight: 700;
     font-size: 30px;
@@ -157,6 +148,7 @@ nav ul button:hover{
     margin-top: 15px;
     background-color: purple;
     color: white;
+    font-weight: 600;
 }
 .btn2{
     border: none;
@@ -165,6 +157,7 @@ nav ul button:hover{
     margin-top: 15px;
     background-color: rgb(110, 55, 110);
     color: white;
+    font-weight: 600;
 }
 .btn3{
     border: none;
@@ -173,6 +166,7 @@ nav ul button:hover{
     margin-top: 15px;
     background-color: rgb(32, 196, 218);
     color: white;
+    font-weight: 600;
 }
 .btn1:hover,.btn2:hover,.btn3:hover{
     background-color: orange;
@@ -188,7 +182,7 @@ nav ul button:hover{
   margin: 30px 0;
 }
 
-/* Big quote mark, sits behind the start of the text */
+/* Big quote mark */
 .part-3 .quote {
   position: absolute;
   top: 32px;
@@ -225,7 +219,7 @@ nav ul button:hover{
   color: #777;
 }
 
-/* Section-4 */
+/* Section-4 Your Opinion Matters */
 .part-4 h2{
     font-weight: 700;
     font-size: 30px;
@@ -257,6 +251,7 @@ nav ul button:hover{
     background-color: #C6E4D6;
     opacity: 100%;
     padding: 10px;
+    font-weight: 600;
 }
 .cards-4{
     background: #fff;
@@ -471,7 +466,7 @@ body {
 .confirm-button button:hover {
   background-color: #1d5740;
 }
-/* Section-7 */
+/* Section-7 Newsletter */
 .part-7{
     background: #e2d4d4;
     padding: 25px;
@@ -538,7 +533,7 @@ body {
     background: #3d95ed;
     opacity: 100%;
 }
-/* Footer */
+/* Footer Section */
 footer{
     background-color: #FFFFFF; 
     color:#0E0E0E ;            
