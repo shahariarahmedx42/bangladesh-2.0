@@ -169,25 +169,51 @@ nav ul button{
     color: white;
 }
 
-/* Section-3 */
-.part-3{
-    background-color: rgb(214, 177, 177);
-    border-radius: 7px;
-    padding: 20px;
-    height: 140px;
-    position: relative;
-    margin-top: 40px;
-    margin-bottom: 30px;
+/* Section-3 -- Quote */
+.part-3 {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 50px 20px 40px;
+  margin: 30px 0;
 }
-.profile-card{
-    margin-top: 20px;
-}
-.quote{
+
+/* Big quote mark, sits behind the start of the text */
+.part-3 .quote {
   position: absolute;
-  top: 12px;
+  top: 32px;
   left: 20px;
-  z-index: 1;
+  height: 50px;
+  z-index: 0;
   pointer-events: none;
+}
+
+.part-3 .quote-text {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 12px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.profile-card {
+  position: relative;
+  z-index: 1;
+}
+
+.employee-name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.employee-designation {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #777;
 }
 
 /* Section-4 */
@@ -230,93 +256,208 @@ nav ul button{
 }
 
 /* Section-5 -- Recent News */
-.part-5 h2{
-    font-weight: 700;
-    font-size: 30px;
-    color: #0E0E0E;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-/* Aljazeera-first & third-card */
-.card-5{
-    border: none;
-    border-radius: 5px;
-    background-color: rgb(212, 237, 229);
-    margin-top: 20px;
-    padding: 20px;
-    display: flex;
-    gap: 20px;
+body {
+  background-color: #f4f4f4;
+  font-family: "Fira Sans", sans-serif;
 }
 
-.satellite-image>img{
-    border-radius: 7px;
-}
-.news-content>img,p,button{
-    margin-top: 10px;
-}
-.news-content>button{
-    background-color: gray;
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
+.part-5 {
+  padding: 0 28px 40px;
 }
 
-/* Section-6 */
-.part-6 h2{
-    font-weight: 700;
-    font-size: 30px;
-    color: #0E0E0E;
-    margin: 40px 0 20px 0;
-    display: flex;
-    justify-content: center;
+.part-5 h2 {
+  font-weight: 700;
+  font-size: 30px;
+  color: #0E0E0E;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
-.part-6 p{
-    font-size: small;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.part-5 .intro {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #555;
+  margin: 0 0 20px;
 }
-/* .donation p:nth-child(2){
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-    padding: 0px;
-} */
-.btns{
-    margin: 10px 20px;
-    display: flex;
-    justify-content: center;
-    padding: 0 200px;
+
+/* Card */
+.card-5 {
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 31px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
-.btns:hover button{
-    background-color: aqua;
-    cursor: pointer;
+
+/* Second card: image on the right */
+.card-5.reverse {
+  flex-direction: row-reverse;
 }
-.btns button{
-    margin: 10px;
-    padding: 30px 70px;
+
+/* Image */
+.satellite-image {
+  flex: 0 0 263px;
 }
-.amount{
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.satellite-image > img {
+  display: block;
+  width: 263px;
+  height: 198px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid #000;
 }
-.amount input{
-    padding: 20px 350px;
+
+/* Text side */
+.news-content {
+  flex: 1;
 }
-.confirm-button{
-    display: flex;
-    justify-content: center;
+
+.news-content h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #222;
+  margin: 0;
 }
-.confirm-button button{
-    background-color: #616a66;
-    opacity: 100%;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
+
+.news-content .source-logo {
+  display: block;
+  height: 26px;
+  margin-top: 12px;
+}
+
+.news-content .meta {
+  font-size: 12px;
+  color: #444;
+  margin: 10px 0 0;
+}
+
+.news-content .desc {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #555;
+  margin: 10px 0 0;
+}
+
+.news-content > button {
+  margin-top: 20px;
+  background-color: #256a50;
+  color: #fff;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid #1a4d39;
+  border-radius: 5px;
+  padding: 8px 18px;
+  cursor: pointer;
+}
+
+.news-content > button:hover {
+  background-color: #1d5740;
+}
+
+/* Section-6 -- Donate */
+.part-6 {
+  padding: 0 20px 40px;
+  text-align: center;
+}
+
+.part-6 h2 {
+  font-weight: 700;
+  font-size: 36px;
+  color: #0E0E0E;
+  margin: 40px 0 20px;
+}
+
+.part-6 p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+
+/* Amount cards */
+.btns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin: 30px auto 30px;
+  max-width: 1020px;
+}
+
+.btns button {
+  padding: 48px 36px;
+  font-family: inherit;
+  font-size: 34px;
+  font-weight: 600;
+  color: #3a3a3a;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.btns button:hover{
+  background-color: #cde4da;
+  border-color: #b5d3c5;
+}
+
+/* Other amount input */
+.amount {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  border: none;
+}
+
+.amount input {
+  width: 100%;
+  max-width: 975px;
+  box-sizing: border-box;
+  padding: 18px 20px;
+  font-family: inherit;
+  font-size: 18px;
+  text-align: center;
+  color: #333;
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  outline: none;
+}
+
+.amount input::placeholder {
+  color: #b5b5b5;
+}
+
+.amount input:focus {
+  border-bottom-color: #2b6a50;
+}
+
+/* Done button */
+.confirm-button {
+  display: flex;
+  justify-content: center;
+}
+
+.confirm-button button {
+  background-color: #2b6a50;
+  color: #fff;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.confirm-button button:hover {
+  background-color: #1d5740;
 }
 /* Section-7 */
 .part-7{
