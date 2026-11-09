@@ -36,6 +36,7 @@ nav ul button{
 nav ul button:hover{
     background-color: red;
     border: white;
+    cursor: pointer;
 }
 /* Banner */
 .banner-content p{
@@ -62,6 +63,7 @@ nav ul button:hover{
 }
 .button:hover{
     background-color: red;
+    cursor: pointer;
 }
 .banner{
     display: flex;
@@ -170,6 +172,7 @@ nav ul button:hover{
 }
 .btn1:hover,.btn2:hover,.btn3:hover{
     background-color: orange;
+    cursor: pointer;
 }
 
 /* Section-3 -- Quote */
@@ -548,4 +551,7 @@ footer{
 }
 .footer h2{
     margin-bottom: 10px;
+}
+.logo:hover{
+  cursor: pointer;
 }
