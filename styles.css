@@ -42,7 +42,10 @@ nav ul button{
     font-weight: semi-bold;
     font-size: 18px;
 }
-
+nav ul button:hover{
+    background-color: red;
+    border: white;
+}
 /* Banner */
 .banner-content p{
     font-size: 18px;
@@ -65,6 +68,9 @@ nav ul button{
     color: #ffffff;
     font-weight: 600;
     font-size: 15px;
+}
+.button:hover{
+    background-color: red;
 }
 .banner{
     display: flex;
@@ -167,6 +173,9 @@ nav ul button{
     margin-top: 15px;
     background-color: rgb(32, 196, 218);
     color: white;
+}
+.btn1:hover,.btn2:hover,.btn3:hover{
+    background-color: orange;
 }
 
 /* Section-3 -- Quote */
@@ -359,10 +368,14 @@ body {
   background-color: #1d5740;
 }
 
-/* Section-6 -- Donate */
+/* Section-6 -- Donation */
 .part-6 {
   padding: 0 20px 40px;
   text-align: center;
+}
+.part-6:hover{
+    background-color: rgb(191, 208, 208);
+    border: cornflowerblue;
 }
 
 .part-6 h2 {
@@ -399,7 +412,6 @@ body {
   border: 1px solid #e0e0e0;
   border-radius: 14px;
   cursor: pointer;
-  transition: background-color 0.2s, border-color 0.2s;
 }
 
 .btns button:hover{
@@ -521,6 +533,10 @@ body {
   background: #2d6a55;
   border-radius: 0 8px 8px 0;
   cursor: pointer;
+}
+.part-7 button:hover{
+    background: #3d95ed;
+    opacity: 100%;
 }
 /* Footer */
 footer{
