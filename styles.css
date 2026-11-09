@@ -13,6 +13,7 @@ ExtraBold 800 */
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 body{
   background-color: #F5F5F5;
@@ -266,18 +267,133 @@ nav ul button{
     font-size: 30px;
     color: #0E0E0E;
     margin: 40px 0 20px 0;
+    display: flex;
+    justify-content: center;
 }
 .part-6 p{
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .donation p:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+} */
+.btns{
+    margin: 10px 20px;
+    display: flex;
+    justify-content: center;
+    padding: 0 200px;
+}
+.btns:hover button{
+    background-color: aqua;
+    cursor: pointer;
+}
+.btns button{
+    margin: 10px;
+    padding: 30px 70px;
+}
+.amount{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.amount input{
+    padding: 20px 350px;
+}
+.confirm-button{
+    display: flex;
+    justify-content: center;
+}
+.confirm-button button{
+    background-color: #616a66;
+    opacity: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+/* Section-7 */
+.part-7{
+    background: #e2d4d4;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 30px;
+}
+.part-7 h2{
+    font-weight: 700;
+    font-size: 30px;
+    color: #0E0E0E;
+    margin: 30px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.part-7 p{
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 20px;
 }
-.btn-5{
-    padding: 30px;
+.part-7 form {
+  display: flex;
+  align-items: stretch;      
+  max-width: 760px;
+  margin: 0 auto 24px;
+  padding: 0;                
+}
 
+.part-7 input,
+.part-7 button {
+  margin: 0;                 
+  box-sizing: border-box;
+  font-family: inherit;      
+  font-size: 18px;
+  border: none;
+}
+
+.part-7 input {
+  flex: 1;
+  min-width: 0;
+  padding: 18px 36px;
+  font-weight: 500;
+  color: #0e0e0e;            
+  background: #fff;
+  border-radius: 8px 0 0 8px;
+}
+
+.part-7 input::placeholder {
+  color: #777;
+  font-weight: 400;
+}
+
+.part-7 button {
+  padding: 18px 36px;
+  font-weight: 600;
+  color: #fff;
+  background: #2d6a55;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
 }
 /* Footer */
 footer{
-    background-color: #333333; /* Dark charcoal background color */
-    color: #ffffff;            /* White text color */
-    text-align: center;        /* Centers the text */
+    background-color: #FFFFFF; 
+    color:#0E0E0E ;            
+    text-align: center;        
     padding: 20px 0;
+    margin-top: 30px;
+}
+.line{
+    padding:0px 200px;
+    opacity: 50%;
+    margin-bottom: 10px;
+}
+.footer h2{
+    margin-bottom: 10px;
 }
